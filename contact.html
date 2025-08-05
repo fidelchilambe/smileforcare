@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Smile for Care LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #1a1a1a;
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .contact-container {
+      flex: 1;
+      max-width: 800px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-container h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+
+    .info-block {
+      margin: 20px 0;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: #00796b;
+    }
+
+    .info-value {
+      font-size: 1.4em;
+      margin-top: 5px;
+      color: #212121;
+      word-break: break-word;
+    }
+
+    footer {
+      padding: 15px;
+      text-align: center;
+      background: #004d40;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .contact-container {
+        margin: 30px 15px;
+        padding: 30px 20px;
+      }
+
+      .contact-container h2 {
+        font-size: 1.8em;
+      }
+
+      .info-value {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <div class="contact-container">
+    <h2>Smile for Care LLC</h2>
+    <p>We’re here to support you. Reach out to us anytime:</p>
+
+    <div class="contact-info">
+      <div class="info-block">
+        <div class="info-label">Phone</div>
+        <div class="info-value">+1 (574) 381-2977</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Email</div>
+        <div class="info-value">info@smileforcare.com</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Smile for Care LLC. All rights reserved.
+  </footer>
+
+</body>
+</html>

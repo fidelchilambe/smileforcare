@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #1f1f1f;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111;
+      color: white;
+    }
+
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 2;
+      padding: 60px;
+    }
+
+    .left h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .left h3 {
+      color: #00bfa5;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .left p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .skills {
+      margin-top: 30px;
+    }
+
+    .skills h4 {
+      font-size: 18px;
+      color: #333;
+      border-bottom: 2px solid #00bfa5;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .skills li {
+      margin-bottom: 10px;
+    }
+
+    .skills li span {
+      color: #00bfa5;
+      font-weight: 600;
+    }
+
+    .right {
+      flex: 1;
+      background: #f0f4f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00bfa5;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 30px auto;
+      transition: background-color 0.3s;
+      display: block;
+      width: 180px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background: linear-gradient(to right, black, cyan);
+    }
+
+    /* ✅ Mobile-specific styles — DO NOT affect desktop */
+    @media (max-width: 768px) {
+      html, body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .container {
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .right {
+        order: -1;
+        padding: 20px;
+        background: #f0f4f8;
+      }
+
+      .profile-pic {
+        width: 70vw;
+        height: 70vw;
+        border-width: 4px;
+      }
+
+      .left {
+        padding: 20px;
+      }
+
+      .left h1 {
+        font-size: 9vw;
+        text-align: center;
+      }
+
+      .left h3 {
+        font-size: 7vw;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .left p {
+        font-size: 5vw;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+      }
+
+      .skills h4 {
+        font-size: 6vw;
+        margin-bottom: 10px;
+      }
+
+      .skills li {
+        font-size: 4.8vw;
+        margin-bottom: 12px;
+      }
+
+      .button {
+        font-size: 5.5vw;
+        width: 80%;
+        max-width: 320px;
+        padding: 14px 0;
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      .header {
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 7vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Mission</div>
+  </div>
+
+  <div class="container">
+    <div class="right">
+      <img src="fi.jpg" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <div class="left">
+      <h1>Smile For Care LLC</h1>
+      <h3>Our mission</h3>
+      <p>
+        Our mission is focused on providing compassionate, high-quality, and personalized residential care services to individuals in need, including the elderly, disabled, and those requiring specialized support. Our mission is to create a safe, nurturing, and inclusive environment that promotes dignity, independence, and well-being for our residents. Through professional caregiving, tailored health and wellness programs, and a commitment to fostering community, we aim to enhance the quality of life for those we serve while offering peace of mind to their families.
+      </p>
+
+      <div class="skills">
+        <h4>Qualities</h4>
+        <ul>
+          <li><span>Client care:</span> We provide full unconditional care to clients and we train our staff accordingly.</li>
+          <li><span>Client mental support:</span> We make sure we take care of our clients mentally at all times.</li>
+        </ul>
+      </div>
+
+      <a href="vision.html" class="button">Continue</a>
+    </div>
+  </div>
+</body>
+</html>

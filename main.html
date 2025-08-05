@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smile for care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      color: black;
+    }
+
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: cyan;
+    }
+
+    .typewriter {
+      text-align: center;
+      margin-top: 17%;
+    }
+
+    .typewriter h1 {
+      display: inline-block;
+      overflow: hidden;
+      border-right: 2px solid black;
+      color: silver;
+      white-space: nowrap;
+      animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .typewriter h2 {
+      display: inline-block;
+      overflow: hidden;
+      border-right: 2px solid black;
+      color: silver;
+      white-space: nowrap;
+      animation: typing2 4s steps(30, end) 4s forwards, blink 0.7s step-end infinite 4s;
+      font-size: 30px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes typing2 {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background: linear-gradient(to right, black, red);
+    }
+
+    /* Mobile view only */
+    @media (max-width: 768px) {
+      body {
+        background-image: none !important;
+        position: relative;
+      }
+
+      .mobile-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+      }
+
+      .nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 5vw;
+      }
+
+      .logo {
+        font-size: 7vw;
+        color: white;
+      }
+
+      .typewriter {
+        margin-top: 40%;
+        padding: 0 20px;
+        color: white;
+        z-index: 2;
+        position: relative;
+      }
+
+      .typewriter h1,
+      .typewriter h2 {
+        font-size: 6.5vw;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid white;
+        animation: none;
+      }
+
+      .typewriter h1 {
+        animation: typing 4s steps(30, end), blink-white 0.7s step-end infinite;
+      }
+
+      .typewriter h2 {
+        animation: typing2 4s steps(30, end) 4s forwards, blink-white 0.7s step-end infinite 4s;
+      }
+
+      .button {
+        font-size: 5vw;
+        padding: 10px 25px;
+        margin-top: 40px;
+      }
+
+      @keyframes blink-white {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+      }
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 9999;
+      font-size: 14px;
+    }
+
+    .cookie-banner button {
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mobile-bg" id="mobileBackground"></div>
+
+  <header class="header">
+    <div class="logo">smile for care</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="mission.html">Mission</a>
+      <a href="vision.html">Vision</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="typewriter">
+    <h1>Welcome to smile for care LLC</h1><br />
+    <h2>Creating a safe heavenly presence for our residents</h2><br />
+    <a href="mission.html" class="button">Get Started</a>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookieBanner" style="display: none;">
+    <span>We use cookies to enhance your browsing experience. By continuing, you agree to our privacy policy.</span>
+    <button onclick="acceptCookies()">Got it!</button>
+  </div>
+
+  <script>
+    const images = ["nc.jpg", "nyc.jpg", "n.jpg", "pc.jpg"];
+    let current = 0;
+
+    function isMobile() {
+      return window.innerWidth <= 768;
+    }
+
+    if (isMobile()) {
+      const mobileBg = document.getElementById("mobileBackground");
+
+      function changeMobileBg() {
+        mobileBg.style.opacity = 0;
+        setTimeout(() => {
+          mobileBg.style.backgroundImage = `url('${images[current]}')`;
+          mobileBg.style.opacity = 1;
+          current = (current + 1) % images.length;
+        }, 500);
+      }
+
+      changeMobileBg();
+      setInterval(changeMobileBg, 6000);
+    } else {
+      function changeBackground() {
+        document.body.style.backgroundImage = `url('${images[current]}')`;
+        current = (current + 1) % images.length;
+      }
+
+      changeBackground();
+      setInterval(changeBackground, 6000);
+    }
+
+    // Cookie Consent Script
+    function acceptCookies() {
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    window.onload = () => {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookieBanner").style.display = "flex";
+      }
+    };
+  </script>
+</body>
+</html>
