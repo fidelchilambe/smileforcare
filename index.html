@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smileforcare - The Best Homecare Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    /* HEADER */
+    .header {
+      width: 100%;
+      background-color: #080808;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 5%;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px;            /* Adjusted for clean sizing */
+      width: auto;             /* Keeps proper proportions */
+      border-radius: 8px;      /* Optional smooth corners */
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);  /* Gentle hover animation */
+    }
+
+    .header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .header nav a:hover {
+      color: #4db6ff;
+    }
+
+    /* MAIN SECTIONS */
+    .container1, .container2, .container3 {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container1 {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 10%;
+    }
+
+    .text-area {
+      flex: 1;
+      text-align: left;
+      padding-right: 40px;
+    }
+
+    .text-area h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #080808;
+      margin-bottom: 20px;
+    }
+
+    .text-area h2 span {
+      color: #039be5;
+    }
+
+    .text-area p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .hero-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-img img {
+      border-radius: 12px;
+      max-width: 90%;
+      height: auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-img img:hover {
+      transform: scale(1.03);
+    }
+
+    button {
+      background-color: #0b0b0b;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #039be5;
+      transform: scale(1.05);
+    }
+
+    /* SECTION STYLING */
+    .container2 {
+      background-color: #f5f5f5;
+      padding: 80px 10%;
+    }
+
+    .container3 {
+      background-color: #e9e9e9;
+      padding: 80px 10%;
+    }
+
+    .container2 img,
+    .container3 img {
+      border-radius: 10px;
+      margin: 20px 0;
+      max-width: 400px;
+      width: 90%;
+      height: auto;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #080808;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      .container1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .text-area {
+        padding-right: 0;
+        text-align: center;
+      }
+
+      .hero-img img {
+        max-width: 100%;
+        margin-top: 30px;
+      }
+
+      .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+      }
+
+      .header nav {
+        margin-top: 10px;
+      }
+
+      .logo img {
+        height: 50px; /* Slightly smaller on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Smileforcare Logo">
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="mission.html">Mission</a>
+      <a href="contact.html">Contact</a>
+      <a href="vision.html">Vision</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="container1">
+    <div class="text-area">
+      <h2>Creating a Safe & <span>Heavenly Presence</span></h2>
+      <p>At Smileforcare, we bring comfort, compassion, and confidence to your loved one’s home. 
+         Our professional caregivers ensure a safe and happy environment for every client we serve.</p>
+      <a href="contact.html"><button>Get Started</button></a>
+    </div>
+
+    <div class="hero-img">
+      <img src="nc.jpg" alt="Nurse caring for client">
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="container2">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of personalized homecare services to meet your family’s unique needs.</p>
+    <img src="pc.jpg" alt="Services Image">
+    <a href="mission.html"><button>Learn More</button></a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="container3">
+    <h2>Contact Us</h2>
+    <p>Reach out to us today for compassionate and professional care solutions tailored for your loved ones.</p>
+    <img src="n.jpg" alt="Contact Image">
+    <a href="contact.html"><button>Contact Now</button></a>
+  </section>
+
+  <footer>
+    © 2025 Smileforcare. All rights reserved.
+  </footer>
+
+</body>
+</html>
