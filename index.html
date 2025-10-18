@@ -4,22 +4,8 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="q4i4kCyAZQvaIDSk3WjGSXpSAR353yRnVR56wERq3Fk" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Smileforcare provides compassionate homecare services, ensuring safety, comfort, and professional assistance for your loved ones.">
-  <meta property="og:title" content="Smileforcare - The Best Homecare Services">
-  <meta property="og:description" content="Providing safe, reliable, and heartfelt homecare for your family.">
-  <meta property="og:image" content="logo.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.com">
-
-  <!-- Favicon -->
   <link rel="icon" href="logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="logo.png">
-  <link rel="shortcut icon" href="logo.png" type="image/png">
-
   <title>Smileforcare - The Best Homecare Services</title>
-
   <style>
     * {
       box-sizing: border-box;
@@ -41,57 +27,40 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 8%;
+      padding: 10px 5%;
       font-size: 22px;
       font-weight: bold;
       letter-spacing: 1px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
 
     .logo img {
-      height: 55px;
-      width: auto;
-      border-radius: 8px;
+      height: 60px;            /* Adjusted for clean sizing */
+      width: auto;             /* Keeps proper proportions */
+      border-radius: 8px;      /* Optional smooth corners */
       transition: transform 0.3s ease;
     }
 
     .logo img:hover {
-      transform: scale(1.05);
+      transform: scale(1.05);  /* Gentle hover animation */
     }
 
-    .logo span {
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    nav a {
+    .header nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-size: 16px;
       font-weight: 500;
       transition: color 0.3s ease;
     }
 
-    nav a:hover {
+    .header nav a:hover {
       color: #4db6ff;
     }
 
-    /* HERO SECTION */
+    /* MAIN SECTIONS */
     .container1, .container2, .container3 {
       width: 100%;
       min-height: 100vh;
@@ -105,6 +74,7 @@
 
     .container1 {
       background-color: #ffffff;
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -223,30 +193,22 @@
         padding: 15px;
       }
 
-      nav {
-        flex-direction: column;
-        gap: 10px;
+      .header nav {
         margin-top: 10px;
       }
 
       .logo img {
-        height: 50px;
-      }
-
-      .logo span {
-        font-size: 20px;
+        height: 50px; /* Slightly smaller on mobile */
       }
     }
   </style>
 </head>
-
 <body>
 
   <!-- HEADER -->
   <header class="header">
     <div class="logo">
       <img src="logo.png" alt="Smileforcare Logo">
-      <span>Smileforcare</span>
     </div>
     <nav>
       <a href="#home">Home</a>
@@ -292,7 +254,5 @@
 
 </body>
 </html>
-
-
 
 
